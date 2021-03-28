@@ -7,7 +7,6 @@ hypo <-structure(list(individual = 1:10, sex = structure(c(2L, 2L, 2L,2L, 2L, 1L
 
 #Q1
 cor(hypo[,c(3,4,7)])
-cor(hypo[,c(3,4,7)])
 var(hypo[,c(3,4,7)])
 
 #Q2
@@ -16,7 +15,7 @@ hypo$IQ <- ifelse(is.na(hypo$IQ), mean(hypo$IQ,na.rm = T), hypo$IQ)
 cor(hypo[,c(3,4,7)])
 
 #Q3
-x<-hypo[,c(3,4,7)]
+x<-table1.3[,c(1:9)]
 mean<-colMeans(x)
 S<-cov(x)
 d<-apply(x,1,function(x)
@@ -33,7 +32,7 @@ qqnorm(table1.3[,7]);qqline(table1.3[,7])
 qqnorm(table1.3[,8]);qqline(table1.3[,8])
 qqnorm(table1.3[,9]);qqline(table1.3[,9])
 par(mfrow=c(1,1))
-plot(qchisq((1:nrow(x)-1/2)/nrow(x),df=3),sort(d),xlab=expression(paste(chi[3]^2,"Quantile")),
+plot(qchisq((1:nrow(x)-1/2)/nrow(x),df=9),sort(d),xlab=expression(paste(chi[9]^2,"Quantile")),
                                                                   ylab="Ordered Distances");abline(a=0,b=1)
 #Q4
 covmat<-matrix(c(3.8778,2.811,3.148,3.5062,2.811,2.121,2.2669,2.569,3.1480,2.2669,2.655,2.8341,3.5062,2.569,2.8341,3.2352),nrow=4,ncol=4)
