@@ -275,3 +275,4 @@ with(quakes,
      {symbols(long,lat,circles = mcircle,inches = 0.125, )
        symbols(long,lat,squares = msquare,inches = 0.125, add = TRUE)
        symbols(long,lat,circles = mrectan,inches = 0.125, add = TRUE,fg = 3)})
+
