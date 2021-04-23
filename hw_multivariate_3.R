@@ -144,3 +144,4 @@ out <- sapply(1:6, function(i) {
        ylab = "Sulphur dioxide concentration");
   abline(lm(USairpollution$SO2[-c(2,5,6,30,31)]~usair_pca$scores[,i]))})
 par(mfrow=c(1,1))
+
