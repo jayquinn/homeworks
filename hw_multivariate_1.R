@@ -1,6 +1,6 @@
 table1.1<-read.table("C:/git/homeworks/t1.1.txt",header=T)
 table1.3<-read.table("C:/git/homeworks/t1.3.txt",header=T)
-install.packages("MVA")##
+install.packages("MVA")###
 library(MVA)
 demo("Ch-MVA")
 hypo <-structure(list(individual = 1:10, sex = structure(c(2L, 2L, 2L,2L, 2L, 1L, 1L, 1L, 1L, 1L), .Label = c("Female", "Male"), class = "factor"),age = c(21L, 43L, 22L, 86L, 60L, 16L, NA, 43L, 22L, 80L),IQ = c(120L, NA, 135L, 150L, 92L, 130L, 150L, NA, 84L, 70L), depression = structure(c(2L, 1L, 1L, 1L, 2L, 2L, 2L, 2L,1L, 1L), .Label = c("No", "Yes"), class = "factor"), health = structure(c(3L,3L, 1L, 4L, 2L, 2L, 3L, 1L, 1L, 2L), .Label = c("Average","Good", "Very good", "Very poor"), class = "factor"), weight = c(150L,160L, 135L, 140L, 110L, 110L, 120L, 120L, 105L, 100L)), .Names = c("individual","sex", "age", "IQ", "depression", "health", "weight"), class = "data.frame", row.names = c(NA, -10L))
